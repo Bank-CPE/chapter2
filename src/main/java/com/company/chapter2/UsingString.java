@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class UsingString {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter topic : ");
+        System.out.println("Enter string : ");
         String topic = scanner.nextLine();
         
         System.out.println("Length : "+topic.length());
