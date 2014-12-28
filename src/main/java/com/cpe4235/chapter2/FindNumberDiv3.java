@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.company.chapter2;
+package com.cpe4235.chapter2;
 
 import java.util.Scanner;
 
@@ -11,15 +11,22 @@ import java.util.Scanner;
  *
  * @author BANK.CPE
  */
-public class TypeCasting {
+public class FindNumberDiv3 {
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
-        float input = scanner.nextFloat();
-        System.out.println("number : "+input);
-        if(input - (int)input == 0){
-            System.out.println("output : "+(int)input);
-        }else{
-            System.out.println("output : "+input);
+       
+        System.out.print("Enter size of n : ");
+        int size = scanner.nextInt();
+        int count = 0;
+        
+        for(int i=1;i<=size;i++){
+            if(i%3 == 0){
+                count++;
+            }
         }
+        
+        System.out.println("Result is "+count);
     }
+    
 }

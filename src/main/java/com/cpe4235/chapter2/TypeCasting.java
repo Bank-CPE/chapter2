@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.company.chapter2;
+package com.cpe4235.chapter2;
 
 import java.util.Scanner;
 
@@ -11,15 +11,15 @@ import java.util.Scanner;
  *
  * @author BANK.CPE
  */
-public class ShowEven {
+public class TypeCasting {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int size = scanner.nextInt();
-        System.out.println("size : "+size);
-        for(int i=1;i<=size;i++){
-            if(i%2 == 0){
-                System.out.println("number : " +i);
-            }
+        float input = scanner.nextFloat();
+        System.out.println("number : "+input);
+        if(input - (int)input == 0){
+            System.out.println("output : "+(int)input);
+        }else{
+            System.out.println("output : "+input);
         }
     }
 }
